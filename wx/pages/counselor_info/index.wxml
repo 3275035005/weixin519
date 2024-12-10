@@ -1,0 +1,48 @@
+<!-- banner -->
+<view class="detailed_banner">
+    <swiper class="detailed_banner__swiper"	indicator-dots="true" indicator-color="rgba(255,255,255,.3)" indicator-active-color="#ffffff">
+        <swiper-item class="detailed_banner__item">
+            <image src="{{item.avatar}}" class="detailed_banner__image" />
+        </swiper-item>
+    </swiper>
+</view>
+<!-- banner -->
+
+
+<!-- box -->
+<view class="detailed_box">
+
+    <!-- info -->
+    <view class="detailed_info shadow">
+    
+        <!-- integral -->
+        <view class="detailed_integral flex">
+            <view class="detailed_integral__number">{{item.name}}</view>
+            <view class="detailed_integral__text" wx:if="{{item.sex === '0'}}">女</view>
+            <view class="detailed_integral__text" wx:else="">男</view>
+        </view>
+        <!-- integral -->
+        <!-- other -->
+        <view class="detailed_other flex">
+         <!-- column -->
+<view class="detailed_column">
+    <text class="line">——</text>
+    <text>咨询师介绍</text>
+    <text class="line">——</text>
+</view>
+<rich-text nodes="{{item.content}}"></rich-text>
+        </view>
+        <!-- other -->
+
+    </view>
+    <!-- info -->
+
+
+</view>
+
+
+
+<!-- btn -->
+<view class="detailed_btn flex">
+  <view class="page_button1 center flex" bindtap="onlineBtn">选择咨询方式</view>
+</view>

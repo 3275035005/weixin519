@@ -1,0 +1,23 @@
+<view class="page">
+  <view class="padding">
+
+    <view class='page-head'>
+      <view class="page-title text-lg text-bold text-black padding-bottom-xs">
+        心理评测
+      </view>
+      <view>共10题</view>
+      <view class='page-score'>
+        <text class="score-num text-red text-bold">{{item.score}}分</text>
+        <view >
+        {{item.type}}
+        </view>
+      </view>
+    </view>
+    <view class='page-footer'>
+      <view class="flex padding flex-direction">
+        <button bindtap="toDoTestAgain" hover-class="other-button-hover" class="cu-btn bg-red round lg">再答一次</button>
+        <button bindtap="toIndex" hover-class="other-button-hover" class="cu-btn line-red round lg margin-top"> 返回首页 </button>
+      </view>
+    </view>
+  </view>
+</view>

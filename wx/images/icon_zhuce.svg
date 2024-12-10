@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="40" height="40" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="组_97" data-name="组 97" transform="translate(-906 -778)">
+    <g id="重复网格_1" data-name="重复网格 1" transform="translate(906 778)" clip-path="url(#clip-path)">
+      <g id="组_96" data-name="组 96" transform="translate(-906 -778)">
+        <rect id="矩形_279" data-name="矩形 279" width="40" height="40" transform="translate(906 778)" fill="none"/>
+        <path id="注册" d="M132.814,98.71a1.2,1.2,0,0,0,.744-2.141l.006-.008a12.007,12.007,0,0,0-3.058-1.725,6.6,6.6,0,1,0-8.581,0,12,12,0,0,0-7.707,11.192v0a1.2,1.2,0,0,0,2.4,0,9.58,9.58,0,0,1,15.373-7.649A1.2,1.2,0,0,0,132.814,98.71Zm-6.6-4.682a4.2,4.2,0,1,1,4.2-4.2A4.2,4.2,0,0,1,126.215,94.028Zm11.175,8.7h-1.8v-1.8a.9.9,0,0,0-1.8,0v1.8h-1.8a.9.9,0,0,0,0,1.8h1.8v1.8a.9.9,0,0,0,1.8,0v-1.8h1.8a.9.9,0,0,0,0-1.8Z" transform="translate(799.783 702.77)" fill="#4a62ff"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+/* --- banner --- */
+.home_banner{position: relative; padding-bottom: 0;}
+.home_banner__box{box-shadow: 0 10rpx 20rpx rgba(255,255,255,0.16);}
+.home_banner__swiper{height: 244rpx;}
+.home_banner__image{width: 686rpx; height: 244rpx;}
+
+
+
+
+/* --- 通知 --- */
+.home_notice{margin: 0 32rpx; border-bottom: 1rpx solid #efefef; height: 80rpx;}
+.home_notice__icon{width: 50rpx; height: 50rpx;}
+.home_notice__title{font-size: 24rpx; margin-left: 16rpx; opacity: .4; width: 10%;} 
+.home_notice__content{width: 75%;}
+.home_notice__swiper{height: 80rpx;}
+.home_notice__item{line-height: 80rpx; font-size: 24rpx;}
+.home_notice__close{width: 32rpx; height: 32rpx; margin-left: auto;}
+
+
+
+
+/* --- 金刚区 --- */
+.home_vajra{padding: 16rpx 0;}
+.home_vajra__item{text-align: center; width: 25%; text-align: center;}
+.home_vajra__icon{width: 80rpx; height: 80rpx;}
+.home_vajra__title{font-size: 24rpx;}
+
+
+
+
+/* --- 喜报 --- */
+.home_good{margin: 20rpx 32rpx; padding: 0 20rpx; overflow: hidden; border-radius: 20rpx; overflow: hidden; margin-bottom: 40rpx;}
+.home_good__column{justify-content: space-between; height: 96rpx; color: #fff; padding: 0 16rpx;}
+.home_good__title{position: relative; z-index: 99;}
+.home_good__title::after{content: ""; left: 0; width: 100%; height: 3px; background: #fff; position: absolute; bottom: 0rpx; border-radius: 100rpx; opacity: .4;}
+.home_good__more{font-size: 24rpx;}
+
+/* list */
+.home_good__swiper{height: 450rpx;}
+.home_good__list{background: #fff; border-radius: 20rpx; margin-bottom: 20rpx;}
+.home_good__item{ height: 150rpx;}
+.home_good__box{padding: 32rpx 0; display: flex; align-items: center; border-bottom: 1rpx solid #efefef;}
+.home_good__icon{width: 56rpx; height: 56rpx; margin: 0 32rpx;}
+.home_good__number{font-size: 40rpx; font-family: din; font-size: 32rpx; margin-bottom: 12rpx;}
+.home_good__dep{font-size: 24rpx; color: #999;}
+.home_good__item:last-child{border-bottom: none;}
+
+

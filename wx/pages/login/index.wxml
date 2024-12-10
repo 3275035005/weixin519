@@ -1,0 +1,64 @@
+<!-- box -->
+<view class="login-box">
+	
+	<!-- 标题 -->
+	<view class="login-header">
+		<view class="back">
+			<image src="/images/login-back.svg" />
+		</view>
+		<view class="title">大学生心理咨询平台</view>
+		<view class="eng">College Students' Psychiatric Consultation</view>
+	</view>
+	<!-- 标题 -->
+	
+	<!-- 输入 -->
+	<view class="page-form">
+
+		<!-- column -->
+		<view class="login-column">
+			<view class="title">登录</view>
+			<view class="dep">SIGN UP</view>
+		</view>
+		<!-- column -->
+
+		<!-- 用户名登录 -->
+		<block>
+
+			<!-- item -->
+			<view class="item">
+				<input placeholder="请输入用户名" bindinput="getUserValue" value="{{username}}" 
+				type="text" adjust-position="true"
+				placeholder-class="placeholder"></input>
+			</view>
+			<!-- item -->
+
+			<!-- item -->
+			<view class="item">
+				<input placeholder="请输入密码" type="password" bindinput="getPasswordValue" value="{{password}}" placeholder-class="placeholder"></input>
+			</view>
+			<!-- item -->
+
+			<!-- button -->
+			<view class="button">
+				<button bindtap="login_User_Button">立即登录</button>
+			</view>
+			<!-- button -->
+
+			<!-- reg -->
+			<view class="reg" bindtap="toRegister">注册</view>
+			<!-- reg -->
+
+
+		</block>
+		<!-- 用户名登录 -->
+		
+	</view>
+	<!-- 输入 -->
+
+	<!-- 版本 -->
+	<view class="login-copyright">{{version}}</view>
+	<!-- 版本 -->
+
+
+</view>
+<!-- box -->

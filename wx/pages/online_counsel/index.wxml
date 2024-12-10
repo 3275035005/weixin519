@@ -1,0 +1,28 @@
+<view class="root">
+	<scroll-view class="sv" scroll-y scroll-into-view="{{toBottom}}">
+ 
+		<view class="box" wx:for="{{list}}" id="item{{index}}">
+			<view class="item" wx:if="{{item.type == '1'}}">
+				<image src="{{item.studentAvatar}}" class="mineAvatorSrc"></image>
+				<view class="mineTextBox">
+					<text class="mineText">{{item.content}}</text>
+				</view>
+			</view>
+ 
+			<view class="item" wx:if="{{item.type == '0'}}">
+				<view class="himTextBox">
+					<text class="himText">{{item.content}}</text>
+				</view>
+                <open-data type="userAvatarUrl" style="border-radius: 25px;overflow: hidden;" class="himAvatorSrc"/>
+			</view>
+		</view>
+ 
+	</scroll-view>
+ 
+	<view class="sendBar">
+		<input type="text" model:value="{{content}}" class="input"/>
+		<view class="button" bindtap="sendMess">
+			<text class="buttonText">发送</text>
+		</view>
+	</view>
+</view>

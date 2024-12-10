@@ -1,0 +1,30 @@
+@import "/style/icon.wxss";
+@import "/style/colorui.wxss";
+page{
+  background-color: #fff;
+}
+
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+.mw-weixin.text-center {
+    color: rgb(238, 238, 238);
+    padding: 30rpx 0 0;
+}
+.bg-red {
+  background-color: #FEAE82;
+  color: #851000;
+}
+.text-red, .line-red, .lines-red {
+  color: #FEAE82;
+}
+.line-red::after, .lines-red::after {
+  border-color: #FEAE82;
+}

@@ -1,0 +1,93 @@
+<!-- top -->
+<view class="user_top flex">
+    <!-- user -->
+    <view class="user_info flex">
+       <!--  <image src="/images/add/04.jpg" class="user_info__image" /> -->
+       <view class="user_info__pic">
+            <open-data type="userAvatarUrl" class="user_info__image" style="width: 128rpx; height: 128rpx;"/>
+            <button class="user_info__btn" size="mini">{{userInfo.name}}</button>
+       </view>
+    </view> 
+    <!-- 设置 -->
+    <navigator hover-class="none" url="/pages/info/index">
+        <image src="/images/icon_setup.svg" class="user_setup" />
+    </navigator>
+    <!-- image -->
+    <image src="/images/user_top.png" class="user_top__back" />
+</view>
+<!-- top -->
+
+
+<!-- 排号 -->
+<view class="user_row flex">
+    <!-- icon -->
+    <image src="/images/icon_row.svg" class="user_row__icon" />
+    <!-- number -->
+    <view class="user_row__content">
+        <view class="user_row__number">{{userInfo.className}}</view>
+        <!-- <view class="user_row__text">我的班级</view> -->
+    </view>
+    <!-- icon -->
+    <image src="/images/icon_row.svg" class="user_row__icon" />
+</view>
+<!-- 排号 -->
+
+
+
+
+<!-- 面板 -->
+<view class="user_panel shadow">
+
+    <!-- item -->
+    <view class="user_panel__item" wx:for="{{user_panel}}" wx:key="index">
+        <navigator hover-class="none" url="{{item.url}}" class="user_panel__url flex">
+            <view class="user_panel__left">
+                <image src="{{item.icon}}" class="user_panel__icon" />
+            </view>
+            <view class="user_panel__right">
+                <view class="user_panel__title">{{item.title}}</view>
+                <image src="/images/icon_arrow.svg" class="user_panel__arrow" />
+            </view>
+        </navigator>
+    </view>
+    <!-- item -->
+
+</view>
+<!-- 面板 -->
+
+
+<!-- 其他 -->
+<view class="user_panel shadow">
+
+    <!-- item -->
+    <view class="user_panel__item flex">
+        <view class="user_panel__left">
+            <image src="/images/user_panel_06.svg" class="user_panel__icon" />
+        </view>
+        <view class="user_panel__right">
+            <view class="user_panel__title">注册时间</view>
+            <view class="user_panel__info">
+               {{userInfo.createTime}}
+            </view>
+        </view>
+    </view>
+
+
+
+</view>
+<!-- 其他 -->
+
+
+<!-- 退出 -->
+<view class="user_out">
+    <button class="page_button blue" size="default" style="width: 686rpx;" bindtap="out">退出登录</button>
+</view>
+<!-- 退出 -->
+
+
+<view style="height: 180rpx;"></view>
+
+
+<!-- tabbar -->
+<tabbar tabbar_current="2"></tabbar>
+<!-- tabbar -->

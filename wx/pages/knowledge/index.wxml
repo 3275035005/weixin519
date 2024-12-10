@@ -1,0 +1,30 @@
+<!-- list -->
+<view class="exchange_list">
+
+    <!-- item -->
+    <view class="exchange_list__item" wx:for="{{knowledgeList}}" wx:key="index" wx:if="{{courseList !== ''}}">
+        <navigator hover-class="none" url="/pages/knowledge_info/index?id={{item.id}}" class="flex">
+            <image src="{{item.image}}" class="exchange_list__image" />
+            <view class="exchange_list__content">
+                <view class="exchange_list__title">{{item.title}}</view>
+                <view class="exchange_list__info">
+                    发布咨询师: <text>{{item.userName}}</text>
+                </view>
+                <view class="exchange_list__info" style="display: flex; justify-content: flex-end;margin-top: 10rpx; ">
+                  发布时间: {{item.createTime}}
+                </view>
+            </view>
+            <image src="/images/icon_arrow.svg" class="exchange_list__icon" />
+        </navigator>
+    </view>
+    <!-- item -->
+
+    <!-- nothing -->
+    <view class="page_nothing flex" wx:if="{{courseList == ''}}">
+        <image class="page_nothing__icon" src="/images/page_nothing.svg" />
+        <view class="page_nothing__text">没有课程内容</view>
+    </view>
+    <!-- nothing -->
+
+</view>
+<!-- list -->

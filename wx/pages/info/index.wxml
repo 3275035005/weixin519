@@ -1,0 +1,46 @@
+<!-- form -->
+<view class="page_form" style="margin-top: 16rpx; margin-bottom: 32rpx;">
+
+  <!-- item -->
+  <view class="page_form__item flex">
+    <view class="page_form__title">账号</view>
+    <view class="page_form__content">
+      <input type="text" disabled="true" placeholder="请输入账号" class="page_form__input" model:value="{{username}}" placeholder-class="placeholder" />
+    </view>
+  </view>
+  <!-- item -->
+  <view class="page_form__item flex">
+    <view class="page_form__title">联系电话</view>
+    <view class="page_form__content">
+      <input type="text"  placeholder="请输入联系电话" class="page_form__input" model:value="{{phone}}" placeholder-class="placeholder" />
+    </view>
+  </view>
+  <view class="page_form__item flex">
+    <view class="page_form__title">姓名</view>
+    <view class="page_form__content">
+      <input type="text"  placeholder="请输入姓名" class="page_form__input" model:value="{{name}}" placeholder-class="placeholder" />
+    </view>
+  </view>
+  <view class="page_form__item flex">
+    <view class="page_form__title">年龄</view>
+    <view class="page_form__content">
+      <input type="number"  placeholder="请输入年龄" class="page_form__input" model:value="{{age}}" placeholder-class="placeholder" />
+    </view>
+  </view>
+  <view class="page_form__item flex">
+    <view class="page_form__title">性别</view>
+    <view class="page_form__content">
+        <picker bindchange="bindRegionChange" range="{{sexList}}" range-key="title">
+      {{sexList[sex_Index].title}}
+		</picker>
+      <!-- <input type="number"  placeholder="请输入年龄" class="page_form__input" model:value="{{age}}" placeholder-class="placeholder" /> -->
+    </view>
+  </view>
+</view>
+<!-- form -->
+
+<!-- button -->
+<view class="account_button">
+  <button class="page_button" style="width: 686rpx;" bindtap="updateInfo" >修改</button>
+</view>
+<!-- button -->

@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/login/index",
+    "pages/index/index",
+    "pages/answer_info/index",
+    "pages/curve/index",
+    "pages/answer_list/index",
+    "pages/counselor_info/index",
+    "pages/answer/index",
+    "pages/consult/index",
+   
+    "pages/counselor/index",
+    "pages/knowledge/index",
+    "pages/knowledge_info/index",
+    "pages/online_counsel/index",
+    "pages/register/index",
+    "pages/wode/wode",
+    "pages/notice/index",
+    "pages/notice_info/index",
+    "pages/info/index",
+    "pages/updatePassword/index",
+    "pages/favorite/index"
+ 
+    
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      }, 
+      {
+        "pagePath": "pages/counselor/index",
+        "text": "心理咨询"
+      }, 
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+  
+  
+}

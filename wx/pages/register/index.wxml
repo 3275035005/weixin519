@@ -1,0 +1,62 @@
+
+
+<!-- 注册 -->
+<view class="register-box page-form">
+
+	<!-- column -->
+	<view class="register-column">
+		<view class="title">注册</view>
+		<view class="dep">Register</view>
+	</view>
+	<!-- column -->
+	<!-- item -->
+	<view class="item">
+		<input type="text" placeholder="请输入账号" placeholder-class="placeholder" bindinput="getUsernameValue"  value="{{username}}"/>
+	</view>
+	<!-- item -->
+
+	<!-- item -->
+	<view class="item">
+		<input type="text" placeholder="请输入密码" placeholder-class="placeholder" bindinput="getPassword"  value="{{password}}"/>
+	</view>
+	<!-- item -->
+  <!-- item -->
+	<view class="item">
+		<input  type="number" placeholder="请输入您的手机号" bindinput="getPhoneValue" value="{{phone}}" placeholder-class="placeholder"></input>
+	</view>
+	<!-- item -->
+
+	<!-- item -->
+	<view class="item">
+		<input type="text" bindinput="getNameValue" placeholder="请输入姓名" placeholder-class="placeholder" value="{{name}}"/>
+	</view>
+	<!-- item -->
+
+	<!-- item -->
+	<view class="item">
+		<input type="number" bindinput="getAgeValue" placeholder="请输入年龄" placeholder-class="placeholder" value="{{age}}"/>
+	</view>
+  <!-- item -->
+  
+	<!-- item -->
+	<view class="item">
+		<picker bindchange="bindRegionChange" range="{{sexList}}" range-key="title">
+      {{sexList[sex_Index].title}}
+		</picker>
+	</view>
+	<!-- item -->
+
+	<!-- button -->
+	<view class="button">
+		<button bindtap="register_Btn">立即注册</button>
+	</view>
+	<!-- button -->
+
+	<!-- tab -->
+	<view class="tab" bindtap="toLogin">
+		已有账号，立即登录 <image src="/images/icon-arrow.svg" />
+	</view>
+	<!-- tab -->
+
+</view>
+<!-- 注册 -->

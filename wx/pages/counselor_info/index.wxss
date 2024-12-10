@@ -1,0 +1,63 @@
+page{background: #F4F6FA;}
+
+
+/* --- banner --- */
+.detailed_banner__swiper{height: 750rpx;}
+.detailed_banner__item{height: 750rpx;}
+.detailed_banner__image{width: 100%; height: 100%;}
+
+
+rich-text .wscnph{
+  max-width:100%;height:auto;display:block;margin:10px 0;
+}
+
+
+/* --- box --- */
+.detailed_box{padding: 32rpx;}
+
+
+
+/* --- info --- */
+.detailed_info{padding: 0 32rpx; background: #fff; border-radius: 16rpx; margin-bottom: 32rpx;}
+
+/* integral */
+.detailed_integral{padding: 16rpx 0; padding-bottom: 8rpx;}
+.detailed_integral__number{font-size: 50rpx; font-family: din; color: #FF4C4C;}
+.detailed_integral__text{font-size: 25rpx; color: #999; margin-left: 16rpx;}
+
+/* title */
+.detailed_title{font-size: 28rpx; font-weight: bolder; line-height: 1.5; margin-bottom: 16rpx;}
+
+/* dep */
+.detailed_dep{font-size: 25rpx; color: #999; margin-bottom: 16rpx;}
+
+/* other */
+.detailed_other{ border-top: 1rpx solid #efefef; height: 100%; font-size: 25rpx;}
+.detailed_other__item{margin-right: 32rpx; color:#999;}
+.detailed_other__item text{color: #FF4C4C; font-family: din;}
+
+
+
+/* --- rule --- */
+.detailed_rule{background: #fff; border-radius: 16rpx; height: 112rpx; font-size: 25rpx; padding: 0 32rpx; padding-right: 20rpx;}
+.detailed_rule__content{color: #999; margin-left: auto;}
+.detailed_rule__more{width: 32rpx; height: 32rpx;}
+.detailed_rule__picker{height: 112rpx; display: flex; align-items: center; padding: 0 32rpx;}
+
+
+/* --- column --- */
+.detailed_column{margin: 32rpx 0 32rpx 0; text-align: center;}
+.detailed_column text{padding: 0 20rpx; font-size: 25rpx; color: #999;}
+.detailed_column text.line{color: #ccc;}
+
+
+
+/* --- content --- */
+.detailed_content{margin-bottom: 150rpx;}
+
+
+
+
+/* --- btn --- */
+.detailed_btn{position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; padding: 25rpx;}
+.page_button1{float: left; width: 95%; padding: 0; margin: 0;padding: 0; height: 96rpx; line-height: 96rpx;background: linear-gradient(to bottom, #4564FC , #5F7AFB); color: #fff; border-radius: 20rpx; height: 112rpx; line-height: 112rpx; padding: 0; font-weight: 400; font-size: 28rpx;}

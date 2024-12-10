@@ -1,0 +1,10 @@
+page{background: #F4F6FA;}
+
+
+
+/* --- list --- */
+.allowance_list{padding: 32rpx;}
+.allowance_item{background: #fff;  border-radius: 32rpx; padding: 32rpx; margin-bottom: 32rpx;}
+.allowance_item__content{width: 100%;}
+.allowance_item__title{font-size: 24rpx; margin-bottom: 8rpx;color: rgb(255, 0, 0);}
+.allowance_item__date{font-size: 24rpx; color: #999;}

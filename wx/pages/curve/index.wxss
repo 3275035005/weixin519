@@ -1,0 +1,12 @@
+/* 定义容器大小 */
+.container{
+  width: 100%;
+  height: 500rpx;
+  background-color: rgb(255, 255, 255);
+}
+
+/* ec-canvas 组件宽高与父元素一致即可 */
+ec-canvas{
+  width: 100%;
+  height: 500rpx;
+}

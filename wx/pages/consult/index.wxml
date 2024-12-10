@@ -1,0 +1,5 @@
+<button class="page_button flex center" bindtap="leaveButton" data-index="0" style="padding:0; width: 630rpx;">
+    在线咨询
+</button> <button class="page_button flex center" bindtap="leaveButton" data-index="1" style="padding:0; width: 630rpx;">
+    匿名咨询
+</button>

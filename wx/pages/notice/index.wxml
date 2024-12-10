@@ -1,0 +1,23 @@
+<!-- list -->
+<view class="allowance_list">
+
+    <!-- item -->
+    <view class="allowance_item shadow flex" wx:for="{{list}}" wx:key="index" wx:if="{{list !== ''}}">
+        <navigator hover-class="none" url="/pages/notice_info/index?id={{item.id}}" class="flex"> 
+        <view class="allowance_item__content"> 
+            <view class="allowance_item__title">{{item.title}}</view>
+            <view class="allowance_item__date">{{item.createTime}}</view>
+        </view>
+    </navigator>
+    </view>
+    <!-- itemm -->
+    
+    <!-- nothing -->
+    <view class="page_nothing flex" wx:if="{{list == ''}}">
+        <image class="page_nothing__icon" src="/images/page_nothing.svg" />
+        <view class="page_nothing__text">暂无通知</view>
+    </view>
+    <!-- nothing -->
+
+</view>
+<!-- list -->

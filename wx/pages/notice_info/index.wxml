@@ -1,0 +1,16 @@
+<!-- title -->
+<view class="notice_title">
+    {{title}}
+</view>
+<!-- title -->
+<!-- content -->
+<view class="notice_time" >
+    <text>
+        发布时间：{{createTime}}
+    </text>
+</view>
+<!-- content -->
+<view>
+  <rich-text nodes="{{content}}"></rich-text>
+</view>
+<!-- content -->

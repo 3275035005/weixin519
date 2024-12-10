@@ -1,0 +1,25 @@
+<!--pages/test/test.wxml-->
+<view class="page">
+  <view class="padding-top text-center">
+    第<text class="text-bold text-xl">{{index+1}}</text>题
+    共<text class="text-bold text-xl">20</text>题
+  </view>
+  <view class='page__hd padding'>
+    <view class="page__title">
+      <!-- <text class="text-bold">【单选题】</text> -->
+      {{questionList[index].question}}
+    </view>
+  </view>
+  <view class="page__bd">
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio my-choosebox" wx:for="{{questionList[index].option}}" wx:for-index="key"  wx:for-item="value" wx:key="index">
+        <radio value="{{key}}" checked="{{questionList[index].checked}}" />
+        <text class="margin-left-xs">{{value}}</text>
+      </label>
+    </radio-group>
+  </view>
+  <view class='page_ft flex padding flex-direction'>
+    <button bindtap='nextSubmit' class="cu-btn bg-red round lg" wx:if="{{index == questionList.length-1}}">提交</button>
+    <button bindtap='nextSubmit' class="cu-btn bg-red round lg" wx:else>下一题</button>
+  </view>
+</view>

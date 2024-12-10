@@ -1,0 +1,10 @@
+/* --- header --- */
+.login-header{background: #5460FE; text-align: center; padding: 40rpx 0; height: 28vh;}
+.login-header .logo image{width: 450rpx; height: 200rpx;}
+.login-header .title{font-size: 50rpx; color: #fff; font-weight: bolder; margin-bottom: 8rpx;}
+.login-header .eng{font-size: 28rpx; font-family: din; color: #fff;}
+.login-header .back{position: absolute; right: 0; top: 0;}
+.login-header .back image{width: 682rpx; height: 950rpx;} 
+
+/* --- copyright --- */
+.login-copyright{height: 5vh; text-align: center; font-size: 24rpx; color: #ccc;}

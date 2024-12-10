@@ -1,0 +1,60 @@
+<!-- banner -->
+<view class="detailed_banner">
+    <swiper class="detailed_banner__swiper"	indicator-dots="true" indicator-color="rgba(255,255,255,.3)" indicator-active-color="#ffffff">
+        <swiper-item class="detailed_banner__item">
+            <image src="{{item.image}}" class="detailed_banner__image" />
+        </swiper-item>
+    </swiper>
+</view>
+<!-- banner -->
+
+
+<!-- box -->
+<view class="detailed_box">
+
+    <!-- info -->
+    <view class="detailed_info shadow">
+    
+        <!-- integral -->
+        <view class="detailed_integral flex">
+            <view class="detailed_integral__number">{{item.title}}</view>
+           
+        </view>
+
+        <!-- other -->
+        <view class="detailed_other flex">
+            <view class="detailed_other__item">发布人: <text>{{item.userName}}</text></view>
+            <view class="detailed_other__item">发布时间 <text>{{item.createTime}}</text></view>
+        </view>
+        <!-- other -->
+
+    </view>
+    <!-- info -->
+
+
+</view>
+<!-- box -->
+
+
+<!-- column -->
+<view class="detailed_column">
+    <text class="line">——</text>
+    <text>心情知识详情</text>
+    <text class="line">——</text>
+</view>
+<!-- column -->
+
+
+<!-- content -->
+<view class="detailed_content">
+  <rich-text nodes="{{item.content}}"></rich-text>
+</view>
+<!-- content -->
+
+
+<!-- btn -->
+<view class="detailed_btn flex">
+  <view class="page_button1 center flex" bindtap="appointmentFavoriteBtn" wx:if="{{item.flag == false}}">点击收藏</view>
+
+  <view class="page_button2 center flex" bindtap="cancelAppointmentFavoriteBtn" wx:else>取消收藏</view>
+</view>

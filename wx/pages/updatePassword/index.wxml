@@ -1,0 +1,29 @@
+<!-- form -->
+<view class="page_form" style="margin-top: 16rpx; margin-bottom: 32rpx;">
+
+    <!-- item -->
+    <view class="page_form__item flex">
+        <view class="page_form__title">旧密码</view>
+        <view class="page_form__content">
+            <input type="password" placeholder="请输入旧密码" class="page_form__input"  model:value="{{oldPassword}}" placeholder-class="placeholder" />
+        </view>
+    </view>
+    <!-- item -->
+
+    <!-- item -->
+    <view class="page_form__item flex">
+        <view class="page_form__title">新密码</view>
+        <view class="page_form__content">
+            <input type="password" placeholder="请输入新密码" class="page_form__input"  model:value="{{password}}" placeholder-class="placeholder" />
+        </view>
+    </view>
+    <!-- item -->
+
+</view>
+<!-- form -->
+
+<!-- button -->
+<view class="account_button">
+    <button class="page_button"  bindtap="updateBtn" style="width: 686rpx;">修改</button>
+</view>
+<!-- button -->

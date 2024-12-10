@@ -1,0 +1,27 @@
+@import "/style/icon.wxss";
+@import "/style/colorui.wxss";
+page {
+  background-color: #fff;
+}
+.page {
+  padding: 30rpx;
+}
+.mw-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.page-score {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top:20rpx;
+}
+.score-num {
+  font-size:100rpx;
+}
+.page-footer {
+  margin-top:30rpx;
+  text-align: center;
+}

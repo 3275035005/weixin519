@@ -1,0 +1,103 @@
+<!-- banner -->
+<view class="home_banner padding">
+    <view class="home_banner__box">
+        <swiper	indicator-dots="true" indicator-color="rgba(255,255,255,.3)" indicator-active-color="#fff" class="home_banner__swiper">
+            <swiper-item wx:for="{{bannerList}}" wx:key="index">
+                <image src="{{item}}" class="home_banner__image" mode="scaleToFill" />
+            </swiper-item>
+        </swiper>
+    </view>
+</view>
+<!-- banner -->
+
+
+<!-- 通知 -->
+<view class="home_notice flex">
+    <image src="/images/icon-notice.svg" class="home_notice__icon" />
+    <view class="home_notice__title">通知</view>
+    <view class="home_notice__content">
+        <swiper vertical="true" autoplay="true" circular="true" interval="4000" class="home_notice__swiper">
+            <swiper-item class="home_notice__item" wx:for="{{noticeList}}" wx:key="index">
+                <navigator hover-class="none" url="/pages/notice_info/index?id={{item.id}}">{{item.title}}</navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+</view>
+<!-- 通知 -->
+
+
+<!-- 金刚区 -->
+<view class="home_vajra flex">
+
+    <!-- item -->
+    <view class="home_vajra__item">
+        <navigator url="/pages/notice/index" hover-class="none">
+            <image src="/images/vajra_01.svg" class="home_vajra__icon"/>
+            <view class="home_vajra__title">最新通知</view>
+        </navigator>
+    </view>
+    <!-- item -->
+ <!-- item -->
+ <view class="home_vajra__item">
+        <navigator url="/pages/answer/index" hover-class="none">
+            <image src="/images/vajra_01.svg" class="home_vajra__icon"/>
+            <view class="home_vajra__title">心理评测</view>
+        </navigator>
+    </view>
+    <!-- item -->
+
+    <!-- item -->
+    <view class="home_vajra__item">
+        <navigator url="/pages/knowledge/index" hover-class="none">
+            <image src="/images/user_panel_07.svg" class="home_vajra__icon"/>
+            <view class="home_vajra__title">心理知识</view>
+        </navigator>
+    </view>
+    <!-- item -->
+
+    <!-- item -->
+    <view class="home_vajra__item">
+        <navigator url="/pages/curve/index" hover-class="none">
+            <image src="/images/tabbar_01.svg" class="home_vajra__icon"/>
+            <view class="home_vajra__title">指数分析</view>
+        </navigator>
+    </view>
+    <!-- item -->
+
+
+</view>
+<!-- 金刚区 -->
+
+
+
+<!-- 公司产品 -->
+<view class="page_product">
+
+    <!-- column -->
+    <view class="page_column flex">
+        <view class="page_column__title">推荐心理知识</view>
+        <view class="page_column__more">
+            <navigator url="/pages/knowledge/index" hover-class="none">更多</navigator>
+        </view>
+    </view>
+    <!-- column -->
+    
+    <!-- list -->
+    <view class="page_product__list flex">
+        
+        <!-- item -->
+        <view class="page_product__item" wx:for="{{knowledgeList}}" wx:key="index">
+            <navigator hover-class="none" url="/pages/knowledge_info/index?id={{item.id}}">
+                <image src="{{item.image}}" class="page_product__image"/>
+                <view class="page_product__title">{{item.title}}</view>
+            </navigator>
+        </view>
+        <!-- item -->
+    </view>
+    <!-- list -->
+</view>
+<!-- 公司产品 -->
+
+<!-- tabbar -->
+<tabbar tabbar_current="0"></tabbar>
+<!-- tabbar -->

@@ -1,0 +1,16 @@
+<!-- 创建容器-此区域用于展示图表 -->
+<view class="container">
+  <!-- 使用 ec-canvas 组件，此处的命名为引入组件路径前面的定义 key 键的名字 -->
+  <!-- 需要设置 id canvas-id ec 三个属性 -->
+  <!-- id canvas-id ec名称可以自己定义，符合命名规范即可 -->
+  <ec-canvas id="myChart" canvas-id="myChart" ec="{{ec}}"></ec-canvas>
+
+  <view>
+    详细分析：
+    <view style="margin: 50rpx;">
+        {{content}}
+    </view>
+      
+  </view>
+
+</view>

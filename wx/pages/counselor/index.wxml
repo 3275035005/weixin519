@@ -1,0 +1,32 @@
+<!-- list -->
+<view class="exchange_list">
+
+    <!-- item -->
+    <view class="exchange_list__item" wx:for="{{counselorList}}" wx:key="index" wx:if="{{counselorList !== ''}}">
+        <navigator hover-class="none" url="/pages/counselor_info/index?id={{item.id}}" class="flex">
+            <image src="{{item.avatar}}" class="exchange_list__image" />
+            <view class="exchange_list__content">
+                <view class="exchange_list__title">{{item.title}}</view>
+                <view class="exchange_list__info">
+                    姓名: <text>{{item.name}}</text>
+                  
+                </view>
+            </view>
+            <image src="/images/icon_arrow.svg" class="exchange_list__icon" />
+        </navigator>
+    </view>
+    <!-- item -->
+
+    <!-- nothing -->
+    <view class="page_nothing flex" wx:if="{{counselorList == ''}}">
+        <image class="page_nothing__icon" src="/images/page_nothing.svg" />
+        <view class="page_nothing__text">没有更多内容</view>
+    </view>
+    <!-- nothing -->
+
+</view>
+<!-- list -->
+
+<!-- tabbar -->
+<tabbar tabbar_current="1"></tabbar>
+<!-- tabbar -->
